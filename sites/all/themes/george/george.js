@@ -5,53 +5,53 @@
         var $stars = $('.star');
         var starHt = $stars.height();
         var starWidth = $stars.width();
+    
+        var $body = $('body').addClass('closer');
         
-        var origDim = {
-            marginTop: $stars.css('marginTop'),
-            marginLeft: $stars.css('marginLeft'),
-            height: $stars.height(),
-            width: $stars.width() + 2 * parseInt($stars.css('paddingLeft'), 10)
-        };
-        
-        var upDim = {
-            marginTop: '-650px',
-            marginLeft: '-350px',
-            height: '1900px',
-            width: '1900px'
-        };
-        
-        
-        var $body = $('body');
         
         $stars.on('click', function(e) {
             
-            $stars.not($(this)).fadeOut();
-        
-            $(this).animate(upDim);
-            
-            $body.addClass("star-up");
-            
-            $(this).removeClass("col-md-2 col-md-offset-1").addClass("big");
-            
+            // Clicks don't continue.
             e.stopPropagation();
+
+            $("#card").toggleClass('flipped');
             
-            $(".block[rel='" + $(this).attr('id') + "']").fadeIn();
-            //$("#main").fadeOut();
+            var $thisStar = $(this);
+            var out = setTimeout(function(){
+                 $(".block[rel='" + $thisStar.attr('id') + "']").fadeIn();
+            
+            }, 1000);
+           
             
         });
         
-        $body.on("click", function() {
+        
+        $('.closer').on("click", function() {
             
-            if($(this).hasClass("star-up")){
+            if($body.hasClass("star-up")){
                 $(".block").fadeOut();
-                $stars.fadeIn();
-                $(".big").animate(origDim, function(){ 
-                    $(".big").removeClass("big").addClass("col-md-2 col-md-offset-1");
+                
+                $(".big").show();
+                $body.removeClass("star-up");
+                
+             
+                $('.big').animate(origDim, function(){ 
+                    $(".big").removeClass("big").addClass("col-md-2 col-md-offset-1").css("position", "relative");
+                    $stars.css("visibility", "visible");
                 });
+
+                
             }
         
         });
 
+    },
+    
+    rearrange: function() {
+        
+        //var marg = 
+    
     }
+    
   };
 })(jQuery);

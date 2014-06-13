@@ -74,50 +74,157 @@
  */
 ?>
 
-<div class="site-wrapper">
+    <div class="container" id="main">
 
-  <div class="site-wrapper-inner">
-
-     <div class="block container cover-container" rel="star-1" id="block-block-1">
-        <div class="row">
+        <div id="stars" class="container">
+            <div class="row">
+                 <div class="col-md-2 col-md-offset-1 star" id="star-1">
+                    <h3>
+                        Buy It
+                    </h3>
+                 </div>
+                 <div class="col-md-2 col-md-offset-6 star" id="star-2">
+                    <h3>
+                        What is 2776?
+                    </h3>
+                </div>
+            </div>  
             
+            <div class="row">
+                 <div class="col-md-2 star" id="star-3">
+                    <h3>
+                        <a href="https://soundcloud.com/2776album" target="_BLANK">Preview It</a>
+                    </h3>
+                 </div>
+                 <div class="col-md-2 col-md-offset-8 star" id="star-4">
+                    <h3>
+                        The Talent
+                    </h3>
+                 </div>
+            </div> 
+            
+            <div class="row row-short">
+                 <div class="col-md-2 col-md-offset-1 star" id="star-5">
+                    <h3>
+                        Videos
+                    </h3>
+                 </div>
+                 <div class="col-md-2 col-md-offset-6 star" id="star-6">
+                    <h3>
+                        Charity
+                    </h3>
+                 </div>
+            </div> 
+        </div>
         
-            
+        <div id="card-container" class="container">
+            <div id="card-parent">
+                <div id="card">
+                    <div class="front">
+                        <img src="<?php echo url('sites/all/themes/george/images/logo_cover_circle.png');?>" />
+                    </div>
+                    <div class="back">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    
+    
+    <div class="block" rel="star-1" id="block-block-1">
+        <div class="cover-container">
+            <ul>
+            <li>iTunes</li>
+              <li>  Amazon</li>
+               <li> Google Play</li>
+              <li><a target="_BLANK" href="http://www.cdbaby.com/cd/2776">cdbaby</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="block" rel="star-2" id="block-block-2">
+        <div class="cover-container">
             <p> The year is 2776, and on the thousandth birthday of America, an evil Alien (Martha Plimpton) threatens to destroy the nation, unless the President (Will Forte) and his Secret Service agent (Aubrey Plaza) can convince her it’s worth saving. Together with a cranky George Washington 
         (Paul F. Tompkins) they travel through our nation’s history—past AND future, taking on everything American &emdash; immigration, religion, the media, sports, politics, sex, droids, and rock n’ roll. Along the way they meet notable Americans, from God (Patton Oswalt) to the Common Cold (Aimee Mann). Can America be saved? Kind of. It’s complicated.
             </p>
         </div>
     </div>
-
-    <div class="container" id="main">
-
-        <div class="row">
-             <div class="col-md-2 col-md-offset-1 star" id="star-1">
-                <h3>
-                    What is 2776?
-                </h3>
-             </div>
-             <div class="col-md-2 col-md-offset-6 star" id="star-2"></div>
-        </div>  
-        
-        <div class="row">
-             <div class="col-md-2 star" id="star-3"></div>
-             <div class="col-md-2 col-md-offset-8 star" id="star-4"></div>
-        </div> 
-        
-        <div class="row row-short">
-             <div class="col-md-2 col-md-offset-1 star" id="star-5"></div>
-             <div class="col-md-2 col-md-offset-6 star" id="star-6"></div>
-        </div> 
-      
-        
-
-
+    
+    <div class="block" rel="star-3" id="block-block-3">
+        <div class="cover-container">
+            <p> 
+                1. America, We’re Good Will Forte
+2. Plot Song 1
+Will Forte, Aubrey Plaza, Martha Plimpton
+3. Escape From New York
+Ashanti, Baron Vaughn, Andy Richter, Alonzo Bodden, Loaded Lux
+4. Farewell California Paul Myers
+5. God Blessed America Patton Oswalt & Bob Margolin
+6. I’m Cured Aimee Mann
+7. Live It Now
+The Sklar Brothers
+8. Mt. Rushmore
+Al Jaffee, Dick Gregory, Dick Cavett, Joe Franklin, Margaret Cho, Marc Yaffee
+9. Journey to Anywhen Reggie Watts, Right Said Fred, Mayim Bialik
+10. Welcome to America Triumph the Insult Comic Dog, The Rebirth Brass Band
+© 2014 The Levinson Brothers & Rob Kutner
+11. Therapy Secession
+Maria Bamford, Jonathan Katz
+12. Forget the Alamo
+Horatio Sanz, Brian Stack, Dave Hill
+13. Plot Song 2
+Will Forte, Aubrey Plaza,
+Martha Plimpton, Paul F. Tompkins
+14. Party on Your Grave Andrew WK
+15. These Aren’t the Droids Neko Case, Kelly Hogan
+16. Stop the Presses
+Colton Dunn, Brandon Johnson, Zach Sherwin, Mike Mills
+17. Battle of the Centuries
+Will Forte, Paul F. Tompkins, Martha Plimpton, Basic Cable Band
+18. (I Wanna) Take a Nap Joel Moss Levinson
+19. US v. Rock n’ Roll
+Nina Totenberg, Dahlia Lithwick
+20. Mole Lotta Love
+Bobcat Goldthwait, Sally Timms
+21. I Can Do It Martha Plimpton
+2776.us A benefit for OneKid OneWorld
+22. Toymageddon
+Yo La Tengo, Ira Glass, Eugene Mirman
+23. Ooh I Love That Girl (PS I’m a Zombie) Miguelito
+24. Bunker Bunker, Burning Love
+Ed Helms
+25. Aliens, Robots & Viruses Apple Sisters
+26. Not What the Founders Intended Paul F. Tompkins, Eric Johnson
+27. Canada—Up On Top Again Mark McKinney, Scott Thompson, Bruce McCulloch, Will Arnett, Samantha Bee, Cobie Smulders, Alex Trebek, Steven Page,
+Craig Northey,
+28. Finale
+Will Forte, Martha Plimpton, Paul F. Tompkins
+            </p>
+        </div>
     </div>
     
-   
+    <div class="block" rel="star-4" id="block-block-4">
+        <div class="cover-container">
+            <p> The year is 2776, and on the thousandth birthday of America, an evil Alien (Martha Plimpton) threatens to destroy the nation, unless the President (Will Forte) and his Secret Service agent (Aubrey Plaza) can convince her it’s worth saving. Together with a cranky George Washington 
+        (Paul F. Tompkins) they travel through our nation’s history—past AND future, taking on everything American &emdash; immigration, religion, the media, sports, politics, sex, droids, and rock n’ roll. Along the way they meet notable Americans, from God (Patton Oswalt) to the Common Cold (Aimee Mann). Can America be saved? Kind of. It’s complicated.
+            </p>
+        </div>
+    </div>
     
-  </div>
+    <div class="block" rel="star-5" id="block-block-5">
+        <div class="cover-container">
+            <p> Videos...
+            </p>
+        </div>
+    </div>
+    
+    <div class="block" rel="star-6" id="block-block-6">
+        <div class="cover-container">
+            <p> Same info about the charity that appears in the album, with their logo
+clicking through to their site, onekidoneworld.org
+            </p>
+        </div>
+    </div>
 
-</div>
 
