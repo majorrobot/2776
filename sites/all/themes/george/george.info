@@ -18,6 +18,12 @@ regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
+regions[star1] = 'Star 1'
+regions[star2] = 'Star 2'
+regions[star3] = 'Star 3'
+regions[star4] = 'Star 4'
+regions[star5] = 'Star 5'
+regions[star6] = 'Star 6'
 
 
 ;;;;;;;;;;;;;;;;;;;;;

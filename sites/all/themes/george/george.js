@@ -3,27 +3,25 @@
     attach: function (context, settings) {
         
         var $stars = $('.star');
-        var starHt = $stars.height();
-        var starWidth = $stars.width();
-    
         var $body = $('body').addClass('closer');
+        var curStar = "";
         
-        
-        $stars.on('click', function(e) {
+        $stars.not('.star-fake').on('click', function(e) {
             
-            // Clicks don't continue.
-            e.stopPropagation();
-
-            $("#card").toggleClass('flipped');
-            
-            var $thisStar = $(this);
-            var out = setTimeout(function(){
-                 $(".block[rel='" + $thisStar.attr('id') + "']").fadeIn();
-            
-            }, 1000);
+			// Clicks don't continue.
+			e.stopPropagation();
+			
+			// Open or close.
+			if(!$body.hasClass("back")) {
+				Drupal.behaviors.george.flipOpen(this);
+			} else {
+				var reopen = $(this).attr("id") != curStar;
+				Drupal.behaviors.george.flipBack(reopen, this);
+			}
            
-            
-        });
+           	curStar = $(this).attr("id");
+           
+		});
         
         
         $('.closer').on("click", function() {
@@ -47,10 +45,29 @@
 
     },
     
-    rearrange: function() {
+    flipOpen: function(star) {
+    	$('body').addClass("back");
+	            
+        $("#card").toggleClass('flipped');
         
-        //var marg = 
+        var out = setTimeout(function(){
+             $(".block[rel='" + $(star).attr('id') + "']").fadeIn();
+        
+        }, 1000);
+    },
+
     
+    flipBack: function(reopen, newStar) {
+    	$('body').removeClass("back");
+    
+        $(".block").fadeOut("fast");
+        $("#card").toggleClass('flipped');
+        
+        if(reopen) {
+        	var out = setTimeout(function(){
+        		Drupal.behaviors.george.flipOpen(newStar);
+        	}, 1000);
+        }
     }
     
   };

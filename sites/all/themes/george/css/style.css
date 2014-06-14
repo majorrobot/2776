@@ -162,10 +162,8 @@ body {
 }
 
 @media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 450px;
   }
 }
 
@@ -189,15 +187,30 @@ body {
 }
 
 .star h3 {
-position: absolute;
-   bottom: 30%;
-   width: 165px;
-   color: #ffd503;
-    /* color: #d2232a; */
+	position: absolute;
+	bottom: 35%;
+	width: 165px;
+	color: #ffd503;
+	/* color: #d2232a; */
+}
+
+.star h3:hover {
+	color: #d2232a;
+	cursor: pointer;
+}
+
+h3 a, h3 a:link, h3 a:visited, h3 a:active {
+	color: #ffd503;
+	text-decoration: none;
+}
+
+h3 a:hover {
+	color: #d2232a;
+	text-decoration: none;
 }
 
 #main {
-	height: 750px;
+	height: 600px;
 	position: relative;
 	top: 50%;
 	
@@ -218,8 +231,8 @@ position: absolute;
 }
 
 #card-parent {
-    height: 800px;
-    width: 800px;
+    height: 600px;
+    width: 600px;
     margin: 0 auto;
     perspective: 800px;
     -webkit-perspective: 800px;
@@ -229,7 +242,7 @@ position: absolute;
 }
 
 #card {
-    width: 100%;
+    width: 600px; /* Thanks for the bug, FF */
     height: 100%;
     position: absolute;
     
@@ -256,6 +269,12 @@ position: absolute;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 #card .front {
@@ -263,8 +282,9 @@ position: absolute;
 }
 
 #card .back {
-    background-color: white;
-    border-radius: 400px;
+    background-color: #FFD503;
+    border: 20px solid #D2232A;
+    border-radius: 300px;
     transform: rotateY( 180deg );
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -279,8 +299,9 @@ position: absolute;
     transform: rotateY( 180deg );
 }
 
+
 #main .row {
-    height: 305px;
+    height: 225px;
 }
 
 #main .row-short {
@@ -291,16 +312,79 @@ position: absolute;
     display: none;
     color: #333;
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
     text-shadow: none;
-    
+    	
     position: absolute;
 	top: 50%;
+	left: 50%;
 	
-	-webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
+.block a, .block a:link, .block a:visited, .block a:active {
+	color: blue;
+}
+
+.block a:hover {
+	color: #d2232a;
+}
+
+
+.block li, .block ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: -90px;
+	font-size: 11px;
+}
+
+footer ul, footer li {
+	list-style: none;
+}
+
+footer ul {
+	margin: 0 auto;
+	width: 393px;
+	height: 40px;
+	padding: 0px;
+	text-align: center;
+}
+
+footer li {
+	margin: 0 0 0;
+	float: left;
+	padding:4px 0 0 25px;
+}
+
+footer li a, footer li a.visited, footer li a.link, footer li a.active {
+	color: #ffd503;
+
+}
+
+.lil-star {
+	background: url(../images/star_sm.png) transparent 0 0 no-repeat;
+	background-size: 20px 20px;
+	/* padding:4px 0 0 25px; */
+	width: 20px;
+	height: 20px;
+	padding:20px;
+}
+
+footer li.last {
+	/* background: #fff; */
+	/* color:#d2232a; */
+	/* text-shadow: none; */
+	/* float: right; */
+	background: url(../images/star_sm.png) transparent 0 0 no-repeat;
+	background-size: 20px 20px;
+	margin-left: 5px;
+}

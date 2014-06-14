@@ -72,7 +72,18 @@
  *
  * @ingroup themeable
  */
+ 
 ?>
+
+	<?php if(current_path() != "node"): ?>
+		
+		 <?php print render($page['sidebar_first']); ?>
+		  <?php print render($page['header']); ?>
+		    <?php print render($page['footer']); ?>
+		      <?php print render($page['content']); ?>
+		
+	<?php else: ?>
+
 
     <div class="container" id="main">
 
@@ -91,7 +102,7 @@
             </div>  
             
             <div class="row">
-                 <div class="col-md-2 star" id="star-3">
+                 <div class="col-md-2 star star-fake" id="star-3">
                     <h3>
                         <a href="https://soundcloud.com/2776album" target="_BLANK">Preview It</a>
                     </h3>
@@ -111,7 +122,7 @@
                  </div>
                  <div class="col-md-2 col-md-offset-6 star" id="star-6">
                     <h3>
-                        Charity
+                        The Charity
                     </h3>
                  </div>
             </div> 
@@ -121,29 +132,47 @@
             <div id="card-parent">
                 <div id="card">
                     <div class="front">
-                        <img src="<?php echo url('sites/all/themes/george/images/logo_cover_circle.png');?>" />
+                        <img src="<?php echo url('sites/all/themes/george/images/logo_cover_circle.png');?>" width="600" />
                     </div>
                     <div class="back">
                     </div>
                 </div>
             </div>
+            
+            <footer class="container">
+			<ul>
+				<li>Illustration by <a href="http://www.heatherbradley.me" target="_BLANK">Heather Bradley</a></li>
+				<li class="last">Site by <a href="http://majorrobot.com" target="_BLANK">Major Robot Interactive</a></li>
+			</ul>
+		</footer>
         </div>
+      
+      
       
     </div>
     
     
-    <div class="block" rel="star-1" id="block-block-1">
+    <?php print render($page['star1']); ?>
+    <?php print render($page['star2']); ?>
+    <?php print render($page['star3']); ?>
+    <?php print render($page['star4']); ?>
+    <?php print render($page['star5']); ?>
+    <?php print render($page['star6']); ?>
+    
+    <!--
+
+    <div class="block star-block" rel="star-1" id="block-block-1">
         <div class="cover-container">
             <ul>
-            <li>iTunes</li>
-              <li>  Amazon</li>
-               <li> Google Play</li>
-              <li><a target="_BLANK" href="http://www.cdbaby.com/cd/2776">cdbaby</a></li>
+            <li><h3><a target="_BLANK" href="">iTunes &gt;&gt;</a></h3></li>
+              <li><h3><a target="_BLANK" href="">Amazon &gt;&gt;</a></h3></li>
+               <li><h3><a target="_BLANK" href="http://www.cdbaby.com/cd/2776">Google Play &gt;&gt;</a></h3></li>
+              <li><h3><a target="_BLANK" href="http://www.cdbaby.com/cd/2776">CDBaby &gt;&gt;</a></h3></li>
             </ul>
         </div>
     </div>
     
-    <div class="block" rel="star-2" id="block-block-2">
+    <div class="block star-block" rel="star-2" id="block-block-2">
         <div class="cover-container">
             <p> The year is 2776, and on the thousandth birthday of America, an evil Alien (Martha Plimpton) threatens to destroy the nation, unless the President (Will Forte) and his Secret Service agent (Aubrey Plaza) can convince her it’s worth saving. Together with a cranky George Washington 
         (Paul F. Tompkins) they travel through our nation’s history—past AND future, taking on everything American &emdash; immigration, religion, the media, sports, politics, sex, droids, and rock n’ roll. Along the way they meet notable Americans, from God (Patton Oswalt) to the Common Cold (Aimee Mann). Can America be saved? Kind of. It’s complicated.
@@ -151,10 +180,17 @@
         </div>
     </div>
     
-    <div class="block" rel="star-3" id="block-block-3">
+    <div class="block star-block" rel="star-3" id="block-block-3">
         <div class="cover-container">
             <p> 
-                1. America, We’re Good Will Forte
+
+            </p>
+        </div>
+    </div>
+    
+    <div class="block star-block" rel="star-4" id="block-block-4">
+        <div class="cover-container">
+            <p>                1. America, We’re Good Will Forte
 2. Plot Song 1
 Will Forte, Aubrey Plaza, Martha Plimpton
 3. Escape From New York
@@ -204,27 +240,21 @@ Will Forte, Martha Plimpton, Paul F. Tompkins
         </div>
     </div>
     
-    <div class="block" rel="star-4" id="block-block-4">
-        <div class="cover-container">
-            <p> The year is 2776, and on the thousandth birthday of America, an evil Alien (Martha Plimpton) threatens to destroy the nation, unless the President (Will Forte) and his Secret Service agent (Aubrey Plaza) can convince her it’s worth saving. Together with a cranky George Washington 
-        (Paul F. Tompkins) they travel through our nation’s history—past AND future, taking on everything American &emdash; immigration, religion, the media, sports, politics, sex, droids, and rock n’ roll. Along the way they meet notable Americans, from God (Patton Oswalt) to the Common Cold (Aimee Mann). Can America be saved? Kind of. It’s complicated.
-            </p>
-        </div>
-    </div>
-    
-    <div class="block" rel="star-5" id="block-block-5">
+    <div class="block star-block" rel="star-5" id="block-block-5">
         <div class="cover-container">
             <p> Videos...
             </p>
         </div>
     </div>
     
-    <div class="block" rel="star-6" id="block-block-6">
+    <div class="block star-block" rel="star-6" id="block-block-6">
         <div class="cover-container">
             <p> Same info about the charity that appears in the album, with their logo
 clicking through to their site, onekidoneworld.org
             </p>
         </div>
     </div>
+-->
 
+<?php endif; ?>
 
