@@ -326,6 +326,12 @@ h3 a:hover {
 	transform: translate(-50%, -50%);
 }
 
+
+#block-system-main {
+	display: block;
+}
+
+
 .block a, .block a:link, .block a:visited, .block a:active {
 	color: blue;
 }
