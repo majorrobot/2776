@@ -32,7 +32,8 @@ regions[star6] = 'Star 6'
 
 stylesheets[all][] = css/style.css
 
-scripts[] = 'george.js'
+scripts[] = 'js/george.js'
+scripts[] = 'js/modernizr.js'
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:

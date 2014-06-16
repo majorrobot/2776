@@ -188,10 +188,20 @@ body {
 
 .star h3 {
 	position: absolute;
-	bottom: 35%;
+	/* bottom: 35%; */
 	width: 165px;
 	color: #ffd503;
+	font-weight: bold;
+	font-size: 30px;
 	/* color: #d2232a; */
+	
+	top: 45%;
+	
+	-webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .star h3:hover {
@@ -282,6 +292,7 @@ h3 a:hover {
 }
 
 #card .back {
+	display: none;
     background-color: #FFD503;
     border: 20px solid #D2232A;
     border-radius: 300px;
@@ -333,7 +344,7 @@ h3 a:hover {
 
 
 .block a, .block a:link, .block a:visited, .block a:active {
-	color: blue;
+	color: #1A629F;
 }
 
 .block a:hover {
