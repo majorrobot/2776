@@ -170,21 +170,28 @@ body {
 
 /* Custom Major Robot */
 
+
+
 #stars {
     z-index: 10;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .star {
     /* width: 195px; */
     height: 200px;
-    /* position: relative; */
     background: url(../images/star.png) transparent center center no-repeat;
-    background-size: 160px 160px;
+    background-size: 90% auto;
 }
 
 .star h3 {
 	position: absolute;
-	/* bottom: 35%; */
 	width: 165px; 
 	color: #ffd503;
 	font-weight: bold;
@@ -199,8 +206,6 @@ body {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	
-
 }
 
 .star h3:hover {
@@ -236,12 +241,21 @@ h3 a:hover {
 
 
 #card-container{
+	width: 100%;
     height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 #card-parent {
     height: 100%;
-    width: 600px;
+    width: 100%;
+    /* width: 600px; */
     margin: 0 auto;
     perspective: 800px;
     -webkit-perspective: 800px;
@@ -251,9 +265,9 @@ h3 a:hover {
 }
 
 #card {
-    width: 600px; /* Thanks for the bug, FF */
-    /* width: 100%; */
+    /* width: 600px; */ /* Thanks for the bug, FF */
     height: 100%;
+    width: 100%;
     position: absolute;
     
     -webkit-transform-style: preserve-3d;
@@ -269,14 +283,21 @@ h3 a:hover {
     transition: transform 1s;
 }
 
-@media (max-width: 1225px) {
-  
-  #card {
-  	 /* max-width: 200px;  */
-  }
-  
+#card img:empty {
+	position: absolute;
+	width: 60%;
+	max-width: 80%;
+	height: auto;
+	
+	/* center the image with translate so we can make it responsive, too */
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-
 
 
 #card div{
@@ -284,6 +305,7 @@ h3 a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
+    
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -299,15 +321,35 @@ h3 a:hover {
 
 #card .back {
 	display: none;
-    background-color: #FFD503;
-    border: 20px solid #D2232A;
-    border-radius: 300px;
+
     transform: rotateY( 180deg );
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -ms-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
 }
+
+#card .back .circle {
+    background-color: #FFD503;
+    border: 20px solid #D2232A;
+    border-radius: 50%;
+    
+    position: absolute;
+	width: 60%;
+	max-width: 80%;
+	height: 0;
+	padding-bottom: 55%;
+    
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
 #card.flipped {
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -410,4 +452,31 @@ footer li.last {
 	background: url(../images/star_sm.png) transparent 0 0 no-repeat;
 	background-size: 20px 20px;
 	margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+	body {
+		width: 768px;
+	}
+}
+
+h3{
+	/* display: none; */
+}
+
+@media (max-width: 765px) {
+	
+	.star {
+		display:none;
+	}
+
+	#card img, 
+	.back .circle {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	 #card-parent, #card {
+	 	width: 100%;
+	 }
 }

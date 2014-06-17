@@ -132,9 +132,10 @@
             <div id="card-parent">
                 <div id="card">
                     <div class="front">
-                        <img class="img-responsive" src="<?php echo url('sites/all/themes/george/images/logo_cover_circle.png');?>" />
+                        <img src="<?php echo url('sites/all/themes/george/images/logo_cover_circle.png');?>" />
                     </div>
                     <div class="back">
+                    	<div class="circle"></div>
                     </div>
                 </div>
             </div>
