@@ -454,21 +454,52 @@ footer li.last {
 	margin-left: 5px;
 }
 
-@media (max-width: 768px) {
-	body {
-		width: 768px;
-	}
-}
 
 h3{
 	/* display: none; */
 }
 
-@media (max-width: 765px) {
-	
+@media (max-width: 768px) {
+  body {
+    min-width: 480px;
+  }
+  .row {
+    height:75px!important; 
+    width:100%;
+    margin: 0px;
+  }
+	#stars {
+    position: relative;
+    top: 0px;
+    -webkit-transform: none;
+    transform: none;
+    left: inherit;
+  }
+ #main {
+    position: relative;
+    top: auto;
+    -webkit-transform: none;
+    transform: none;
+    left: inherit;
+  }
 	.star {
-		display:none;
+    position: relative!important;
+    background-image: none;
+    height: 75px;
+    width: 50%;
+    float: left;
+    margin: 0px;
+    line-height: 75px;
 	}
+  .star h3 {
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  #card-container {
+    position: relative; 
+    top: 250px;
+  }
 
 	#card img, 
 	.back .circle {
@@ -479,4 +510,32 @@ h3{
 	 #card-parent, #card {
 	 	width: 100%;
 	 }
+    #card .back .circle {
+      background: none;
+      background-image: url("../images/logo_cover_circle.png");
+      background-size: 100% 100%;
+      
+      border: none;
+      opacity: .15;
+    }
+   .block {
+    
+      color: #333;
+      margin: 0 auto;
+      width: 90%;
+      text-shadow: none;    
+      position: absolute;
+      top: 250px;
+      left: 5%;
+      -webkit-transform: none;
+      transform: none;
+  }
+
+  .block p, .block h2 {
+    color: #fff;
+  }
+
+  footer {
+    position: relative;
+  }
 }

@@ -85,7 +85,7 @@
 	<?php else: ?>
 
 
-    <div class="container" id="main">
+    <div class="container clearfix" id="main">
 
         <div id="stars" class="container">
             <div class="row">
