@@ -534,7 +534,7 @@ h3{
   .block p, .block h2 {
     color: #fff;
   }
-  .block a {
+  .block a, .block a:link, .block a:visited, .block a:active {
     color: #ffd503;
   }
 
