@@ -534,6 +534,9 @@ h3{
   .block p, .block h2 {
     color: #fff;
   }
+  .block a {
+    color: #ffd503;
+  }
 
   footer {
     position: relative;
