@@ -37,7 +37,11 @@ iframe {border: none;}
 body { background: #FFF; color: #898989; font-size: 12px; font-family: 'Arial', 'Verdana', sans-serif; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ 
 -webkit-text-size-adjust: 100%; }
 
-body.custom-background {background-image: url("../images/sampleimages/main-bg1.jpg"); background-repeat: no-repeat; background-position: top center; background-attachment: fixed;}
+body.custom-background {background-image:url("../images/2776background.png");
+background-size:100%100%;
+background-position:center;
+background-repeat:no-repeat;
+}
 
 p,ul,ol,pre,code {margin-bottom: 1em;}
 
@@ -61,7 +65,7 @@ h1 { font-size: 34px; line-height: 36px; }
 
 h2 { font-size: 26px; line-height: 34px; }
 
-h3 { font-size: 24px; line-height: 32px; }
+h3 { font-size: 18px; line-height: 20px; text-align:center; }
 
 h4 { font-size: 18px; line-height: 24px; }
 
