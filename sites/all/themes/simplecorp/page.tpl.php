@@ -20,6 +20,7 @@
                         <ul id="social-links">
                             <li class="facebook-link"><a href="https://www.facebook.com/2776album" target="_blank" class="facebook" id="social-01" title="Join Us on Facebook!">Facebook</a></li>
                             <li class="twitter-link"><a href="https://twitter.com/2776Updates" target="_blank" class="twitter" id="social-02" title="Follow Us on Twitter">Twitter</a></li>
+                            <li class="youtube-link"><a href="https://www.youtube.com/user/LevinsonBrothers" target="_blank" class="youtube" id="social-06" title="Watch the Videos">YouTube</a></li>
                         </ul>
                     </div>
                     <!-- EOF: #social-icons -->
@@ -35,7 +36,7 @@
                 <div id="header-left" class="one-third"> 
                     
                     <?php if ($logo): ?>
-                    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+                    <a href="<?php print $front_page; ?>"?> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                     <?php endif; ?>
 
                     <?php if ($site_name || $site_slogan): ?>
@@ -310,7 +311,7 @@
                         
 					<?php if ($is_front): ?>  
                     
-                    <h3>Check out some of the cover art:</h3>
+                    <h3><strong>The Songs</strong></h3><br>
                     
                     <ul id="projects-carousel" class="loading">
     
@@ -518,7 +519,7 @@
                     </ul>
     
                     <!-- // optional "view full portfolio" button on homepage featured projects -->
-                    <a href="#" class="colored" title="portofolio">View full portofolio</a> 
+                    <center><a href="http://www.funnyordie.com/slideshows/f3bd307bfa/2776-the-covers" target="_blank">View All Album Art</a> </center>
                
                 <?php endif; ?>
 
