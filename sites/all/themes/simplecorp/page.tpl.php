@@ -43,9 +43,8 @@
                         <!-- #name-and-slogan -->
                         <hgroup id="name-and-slogan">
 							<?php if ($site_name):?>
-                            <h1 id="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
-                            <?php endif; ?>
-    
+                           <span style="text-align:center;"><h1 id="site-name"><b>The Album</b></h1></span>
+                            <?php endif; ?></span>
                             <?php if ($site_slogan):?>
                             <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
                             <?php endif; ?>
