@@ -2354,6 +2354,9 @@ function _drupal_bootstrap_configuration() {
   timer_start('page');
   // Initialize the configuration, including variables from settings.php.
   drupal_settings_initialize();
+
+  require_once DRUPAL_ROOT . '/includes/request-sanitizer.inc';
+  DrupalRequestSanitizer::sanitize();
 }
 
 /**
