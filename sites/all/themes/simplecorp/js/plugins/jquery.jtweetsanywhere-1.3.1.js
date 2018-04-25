@@ -242,7 +242,7 @@ JTA_I18N.addResourceBundle('jTweetsAnywhere', 'en',
 			 *
 			 * Sample: 'tbillenstein' or ['twitterapi', '...', '...']
 			 */
-			username: 'morethanthemes',
+			username: '2776Updates',
 
 			/**
 			 * The name of a user's list where the tweet feed is generated from. The special

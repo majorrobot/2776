@@ -18,15 +18,9 @@
                     <!-- #social-icons -->
                     <div id="social-icons" class="clearfix">
                         <ul id="social-links">
-                            <li class="facebook-link"><a href="https://www.facebook.com/morethan.just.themes" class="facebook" id="social-01" title="Join Us on Facebook!">Facebook</a></li>
-                            <li class="twitter-link"><a href="https://twitter.com/morethanthemes" class="twitter" id="social-02" title="Follow Us on Twitter">Twitter</a></li>
-                            <li class="google-link"><a href="#" id="social-03" title="Google" class="google">Google</a></li>
-                            <li class="dribbble-link"><a href="#" id="social-04" title="Dribble" class="dribbble">Dribble</a></li>
-                            <li class="vimeo-link"><a href="#" id="social-05" title="Vimeo" class="vimeo">Vimeo</a></li>
-                            <li class="skype-link"><a href="#" id="social-06" title="Skype" class="skype">Skype</a></li>
-                            <li class="linkedin-link"><a href="#" id="social-07" title="Linkedin" class="linkedin">Linkedin</a></li>
-                            <li class="pinterest-link"><a href="#" id="social-09" title="Pinterest" class="pinterest">Pinterest</a></li>
-                            <li class="rss-link"><a href="#" id="social-08" title="RSS" class="rss">RSS Feeds</a></li>
+                            <li class="facebook-link"><a href="https://www.facebook.com/2776album" target="_blank" class="facebook" id="social-01" title="Join Us on Facebook!">Facebook</a></li>
+                            <li class="twitter-link"><a href="https://twitter.com/2776Updates" target="_blank" class="twitter" id="social-02" title="Follow Us on Twitter">Twitter</a></li>
+                            <li class="youtube-link"><a href="https://www.youtube.com/user/LevinsonBrothers" target="_blank" class="youtube" id="social-06" title="Watch the Videos">YouTube</a></li>
                         </ul>
                     </div>
                     <!-- EOF: #social-icons -->
@@ -42,16 +36,15 @@
                 <div id="header-left" class="one-third"> 
                     
                     <?php if ($logo): ?>
-                    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+                    <a href="<?php print $front_page; ?>"?> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                     <?php endif; ?>
 
                     <?php if ($site_name || $site_slogan): ?>
                         <!-- #name-and-slogan -->
                         <hgroup id="name-and-slogan">
 							<?php if ($site_name):?>
-                            <h1 id="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
-                            <?php endif; ?>
-    
+                           <span style="text-align:center;"><h1 id="site-name"><b>The Album</b></h1></span>
+                            <?php endif; ?></span>
                             <?php if ($site_slogan):?>
                             <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
                             <?php endif; ?>
@@ -129,36 +122,37 @@
                                 <!-- first-slide -->
                                 <li class="slider-item">
                                     <div class="slider-image">
-                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
+                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/BehindScenes/WillAubrey.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>“Everybody's buzzing about the new comedy album 2776, which is chock full of famous comedians and personalities, riffing about the future and science-fictional stuff. Almost everybody you love is on this album” – io9.com</h3>
                                     </div>
                                 </li>
     
                                 <!-- second-slide -->
                                 <li class="slider-item">
                                     <div class="slider-image">                        
-                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
+                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/BehindScenes/Triumph recording booth.jpg" alt="" /></a>
                                     </div>                        
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>“The most patriotic way to celebrate July 4th: laughing at ourselves. 2776—a part music, part comedy concept album—drops tomorrow, featuring a list of awesome people too long to list here poking fun at all things American.” – GQ.com, The Punch List</h3>
                                     </div>
                                 </li>
     
                                 <!-- third-slide -->
                                 <li class="slider-item">
                                     <div class="slider-image">                            
-                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img3.jpg" alt="" /></a>
+                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/BehindScenes/AndrewWK.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>“Andrew WK contributes a track called “Party On Your Grave” that combines the epic power and guitar shredditude of a vintage Judas Priest track with lyrics about getting revenge on an enemy, Andrew WK-style: by partying as hard as possible.” – EW.com</h3>
                                     </div>
                                 </li>
     
                             </ul>
                         </div>
                     </div>
+                    
                     <!-- EOF: #slider-container -->
                     <?php endif; ?>
 
@@ -316,10 +310,36 @@
                         
 					<?php if ($is_front): ?>  
                     
-                    <h3>Some of Our Featured Projects</h3>
+                    <h3><strong>The Songs</strong></h3><br>
                     
                     <ul id="projects-carousel" class="loading">
     
+                   <!-- PROJECT ITEM STARTS -->
+                        <li>
+                            <div class="item-content">
+                                <div class="link-holder">
+                                    <div class="portfolio-item-holder">
+                                        <div class="portfolio-item-hover-content">
+    
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/PattonandGod.png" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/PattonandGod.png" alt="" width="220" class="portfolio-img" />
+    
+                                            <div class="hover-options"></div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            <br>Cover Art by Tony Millionaire
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- PROJECT ITEM ENDS -->
+
+    
                         <!-- PROJECT ITEM STARTS -->
                         <li>
                             <div class="item-content">
@@ -327,18 +347,18 @@
                                     <div class="portfolio-item-holder">
                                         <div class="portfolio-item-hover-content">
     
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-1.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/im_cured.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
                                             
-                                           <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img1.jpg" alt="" width="220"  class="portfolio-img" />  
-                                            
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/im_cured.jpg" alt="" width="220" class="portfolio-img" />
+    
                                             <div class="hover-options"></div>
                                         </div>
                                     </div>
                                     <div class="description">
                                         <p>
-                                            <a href="#" title="title"> BlackBerry Website Project</a>
+                                            <br><a href="http://www.rozchast.com" target="_blank">Cover Art by Roz Chast</a>
                                         </p>
-                                        <span>Web</span>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -352,18 +372,18 @@
                                     <div class="portfolio-item-holder">
                                         <div class="portfolio-item-hover-content">
     
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-2.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/Bunker-Bunker_smallcropped.png" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
                                             
-                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img2.jpg" alt="" width="220" class="portfolio-img" />
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/Bunker-Bunker_smallcropped.png" alt="" width="220" class="portfolio-img" />
     
                                             <div class="hover-options"></div>
                                         </div>
                                     </div>
                                     <div class="description">
                                         <p>
-                                            <a href="#" title="title"> Vestibulum ante ipsum primis</a>
+                                            <br><a href="http://bizarrocomics.com/" target="_blank">Cover Art by Dan Piraro</a>
                                         </p>
-                                        <span>Illustration</span>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -377,43 +397,18 @@
                                     <div class="portfolio-item-holder">
                                         <div class="portfolio-item-hover-content">
     
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-3.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/droids_small.png" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
                                             
-                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img3.jpg" alt="" width="220" class="portfolio-img" />
-    
-                                            <div class="hover-options"></div>
-                                        </div>
-                                    </div>
-                                    <div class="description">
-                                        <p>
-                                            <a href="#" title="title"> Nulla mollis fermentum nunc</a>
-                                        </p>
-                                        <span>Illustration</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- PROJECT ITEM ENDS -->
-    
-                        <!-- PROJECT ITEM STARTS -->
-                        <li>
-                            <div class="item-content">
-                                <div class="link-holder">
-                                    <div class="portfolio-item-holder">
-                                        <div class="portfolio-item-hover-content">
-    
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-4.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
-                                            
-                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img4.jpg" alt="" width="220" class="portfolio-img" />
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/droids_small.png" alt="" width="220" class="portfolio-img" />
                                             
                                             <div class="hover-options"></div>
                                         </div>
                                     </div>
                                     <div class="description">
                                         <p>
-                                            <a href="#" title="title"> Cras vel orci sapien</a>
+                                            <br>Cover Art by Lynda Barry
                                         </p>
-                                        <span>Illustration / Web</span>
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -427,18 +422,18 @@
                                     <div class="portfolio-item-holder">
                                         <div class="portfolio-item-hover-content">
     
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-5.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/album art/Rushmore_small.png" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
                                             
-                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img5.jpg" alt="" width="220" class="portfolio-img" />
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/Rushmore_small.png" alt="" width="220" class="portfolio-img" />
                                             
                                             <div class="hover-options"></div>
                                         </div>
                                     </div>
                                     <div class="description">
                                         <p>
-                                            <a href="#" title="title">Curabitur nisl libero</a>
+                                            <br>Cover Art by Noah Van Sciver
                                         </p>
-                                        <span>Illustration / Web</span>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -452,18 +447,18 @@
                                     <div class="portfolio-item-holder">
                                         <div class="portfolio-item-hover-content">
     
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-1.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/sklyar_small.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
                                             
-                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img1.jpg" alt="" width="220" class="portfolio-img" />
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/sklyar_small.jpg" alt="" width="220" class="portfolio-img" />
                                             
                                             <div class="hover-options"></div>
                                         </div>
                                     </div>
                                     <div class="description">
                                         <p>
-                                            <a href="#" title="title"> BlackBerry Website Project</a>
+                                            <br>Cover Art by Sam Dakota</a>
                                         </p>
-                                        <span>Web</span>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -477,18 +472,18 @@
                                     <div class="portfolio-item-holder">
                                         <div class="portfolio-item-hover-content">
     
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-2.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/USvRnR.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
                                             
-                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img2.jpg" alt="" width="220" class="portfolio-img" />
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/USvRnR.jpg" alt="" width="220" class="portfolio-img" />
                                             
                                             <div class="hover-options"></div>
                                         </div>
                                     </div>
                                     <div class="description">
                                         <p>
-                                            <a href="#" title="title"> Vestibulum ante ipsum primis</a>
+                                            <br><a href="http://arthurlien.com/" target="_blank">Cover Art by Art Lien</a>
                                         </p>
-                                        <span>Illustration</span>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -502,18 +497,18 @@
                                     <div class="portfolio-item-holder">
                                         <div class="portfolio-item-hover-content">
     
-                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/portfolio-img-3.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
+                                            <a href="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/albumcover.jpg" title="title" data-rel="prettyPhoto" class="zoom">View Image</a>
                                             
-                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/pt-img3.jpg" alt="" width="220" class="portfolio-img" />
+                                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/album art/albumcover.jpg" alt="" width="220" class="portfolio-img" />
                                             
                                             <div class="hover-options"></div>
                                         </div>
                                     </div>
                                     <div class="description">
                                         <p>
-                                            <a href="#" title="title"> Nulla mollis fermentum nunc</a>
+                                            <br><a href="http://heatherbradley.me/" target="_blank">Cover Art by Heather Bradley</a>
                                         </p>
-                                        <span>Illustration</span>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -523,7 +518,7 @@
                     </ul>
     
                     <!-- // optional "view full portfolio" button on homepage featured projects -->
-                    <a href="#" class="colored" title="portofolio">View full portofolio</a> 
+                    <center><a href="http://www.funnyordie.com/slideshows/f3bd307bfa/2776-the-covers" target="_blank">View All Album Art</a> </center>
                
                 <?php endif; ?>
 
@@ -578,8 +573,7 @@
                     <?php print render($page['footer']); ?>
                     <?php endif; ?>
                     
-                    <div class="credits">
-                    Ported to Drupal by <a href="http://www.drupalizing.com">Drupalizing</a> a Project of <a href="http://www.morethanthemes.com">More than Themes</a>. Designed by <a href="http://www.s5themes.com/">Site5 WordPress Themes</a>. 
+                    <div class="credits"><center>Illustration by <A href="http://heatherbradley.me/#about1" target="_blank">Heather Bradley</A>. Site by <a href="http://majorrobot.com" target="_blank">Major Robot Interactive</a>. Theme Provided by <a href="http://www.s5themes.com/" target="_blank">Site5 WordPress Themes</a></center>
                     </div>
 
                 </div>
